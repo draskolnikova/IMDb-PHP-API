@@ -7,10 +7,6 @@
     // IMDb ( [bool $anonymise = false [, bool $summary = true [, int $titlesLimit = 0]]] )
     $imdb = new IMDb(true, true, 0);	// anonymise requests to prevent IP address getting banned, summarise returned data, unlimited films returned
 
-### Available obj to use
-    
-    id, tconst, title, year, plot, tagline, rating, votes, genre, genres (array), writer, director, actors, released (dd mmm yyyy), release_datestamp (yyyy-mm-dd), runtime, certificate, poster
-
 ### Search for a movie by title
 
     // Returns an array containing objects of matching titles
@@ -31,6 +27,12 @@
     // $movie->title => "The Godfather"
     // $movie->rating => "8.1"
     // $movie->year => "1972"
+
+
+#### Available obj to use
+    
+    id, tconst, title, year, plot, tagline, rating, votes, genre, genres (array), writer, director, actors, released (dd mmm yyyy), release_datestamp (yyyy-mm-dd), runtime, certificate, poster
+
 
 ### Search for a person by name
 
